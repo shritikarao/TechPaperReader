@@ -15,11 +15,11 @@ An iOS application that helps users stay updated with the latest scientific publ
 🚧 **Under Development** 🚧
 
 This project is currently in active development. The MVP is being built with the following timeline:
-- Day 1: Project setup, UI design, and arXiv API integration
-- Day 2: Topic selection and paper discovery implementation
-- Day 3: Push notification system and Grok Mini API integration
-- Day 4: Summary generation and caching system
-- Day 5: Testing, bug fixes, and App Store preparation
+- Phase 1: Project setup, UI design, and arXiv API integration
+- Phase 2: Topic selection and paper discovery implementation
+- Phase 3: Push notification system and Grok Mini API integration
+- Phase 4: Summary generation and caching system
+- Phase 5: Testing, bug fixes, and App Store preparation
 
 ## Technical Stack
 
@@ -31,7 +31,7 @@ This project is currently in active development. The MVP is being built with the
 
 ## Requirements
 
-- iOS 15.0+
+- iOS 16.0+
 - Xcode 14.0+
 - Swift 5.0
 - Internet connection
@@ -71,3 +71,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 Feel free to reach out to me on [LinkedIn](your-linkedin-url) or [Twitter](your-twitter-url) for any questions or discussions about this project. 
+
+-testing commit ability
