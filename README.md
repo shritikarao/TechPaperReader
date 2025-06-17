@@ -70,6 +70,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Feel free to reach out to me on [LinkedIn](your-linkedin-url) or [Twitter](your-twitter-url) for any questions or discussions about this project. 
-
--testing commit ability
+Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/shritika-rao) or my [Gmail](shritika.rao@gmail.com) for any questions or discussions about this project. 
