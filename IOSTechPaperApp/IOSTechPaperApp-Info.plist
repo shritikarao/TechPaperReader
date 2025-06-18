@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	Replace the string below with your secret API key from platform.openai.com
+	Do not commit this file with your real key to a public repository.
+	-->
+	<key>OPENAI_API_KEY</key>
+	<string>YOUR_OPENAI_API_KEY_HERE</string>
+</dict>
+</plist>
+

@@ -7,6 +7,7 @@ struct ArxivPaper: Identifiable {
     let summary: String
     let published: Date
     let link: URL
+    let categories: [String]
 }
 
 extension ArxivPaper {

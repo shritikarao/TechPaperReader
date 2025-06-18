@@ -18,10 +18,6 @@ class UserPreferences: ObservableObject {
         selections[fieldId] ?? []
     }
 
-    var allSelectedSubcategories: [String] {
-        selections.values.flatMap { $0 }
-    }
-
     func toggle(subcategory: String, in fieldId: String) {
         var set = selections[fieldId] ?? []
         if set.contains(subcategory) {

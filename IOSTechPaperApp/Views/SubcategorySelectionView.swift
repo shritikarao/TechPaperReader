@@ -26,7 +26,12 @@ struct SubcategorySelectionView: View {
 
             if !preferences.selected(in: field.id).isEmpty {
                 Section {
-                    NavigationLink(destination: PapersListView(selectedCategories: preferences.allSelectedSubcategories)) {
+                    NavigationLink(destination:
+                        PapersListView(selectedCategories: Array(preferences.selected(in: field.id)))
+                            .onAppear {
+                                print("[SubcategorySelectionView] Navigating with selections for field '\(field.name)': \(preferences.selected(in: field.id))")
+                            }
+                    ) {
                         Text("View Papers")
                     }
                 }
