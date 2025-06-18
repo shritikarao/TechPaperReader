@@ -19,8 +19,9 @@
 		38D4BAB42E01F2B4009A0766 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BAA22E01F2B4009A0766 /* CategoryViewModel.swift */; };
 		38D4BAB52E01F2B4009A0766 /* SubcategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BAA72E01F2B4009A0766 /* SubcategorySelectionView.swift */; };
 		38D4BAB62E01F2B4009A0766 /* PapersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BAA32E01F2B4009A0766 /* PapersViewModel.swift */; };
-		38D4BAF22E034050009A0766 /* OpenAISummaryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BAF12E034050009A0766 /* OpenAISummaryClient.swift */; };
 		38D4BAF62E034431009A0766 /* IOSTechPaperApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38D4BAF52E034431009A0766 /* IOSTechPaperApp-Info.plist */; };
+		38D4BAFB2E0349BD009A0766 /* PDFTextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BAF92E0349BD009A0766 /* PDFTextExtractor.swift */; };
+		38D4BAFF2E034ADE009A0766 /* XAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BAFE2E034ADE009A0766 /* XAIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +39,9 @@
 		38D4BAA52E01F2B4009A0766 /* CategorySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionView.swift; sourceTree = "<group>"; };
 		38D4BAA62E01F2B4009A0766 /* PapersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapersListView.swift; sourceTree = "<group>"; };
 		38D4BAA72E01F2B4009A0766 /* SubcategorySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategorySelectionView.swift; sourceTree = "<group>"; };
-		38D4BAF12E034050009A0766 /* OpenAISummaryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAISummaryClient.swift; sourceTree = "<group>"; };
 		38D4BAF52E034431009A0766 /* IOSTechPaperApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSTechPaperApp-Info.plist"; sourceTree = "<group>"; };
+		38D4BAF92E0349BD009A0766 /* PDFTextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTextExtractor.swift; sourceTree = "<group>"; };
+		38D4BAFE2E034ADE009A0766 /* XAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				38D4BAF52E034431009A0766 /* IOSTechPaperApp-Info.plist */,
-				38D4BAF12E034050009A0766 /* OpenAISummaryClient.swift */,
+				38D4BAFA2E0349BD009A0766 /* Utility */,
 				38D4BA982E01F2B4009A0766 /* Assets.xcassets */,
 				38D4BA992E01F2B4009A0766 /* IOSTechPaperApp.xcodeproj */,
 				38D4BA9D2E01F2B4009A0766 /* Models */,
@@ -92,6 +94,7 @@
 			children = (
 				38D4BA9E2E01F2B4009A0766 /* ArxivAPIClient.swift */,
 				38D4BA9F2E01F2B4009A0766 /* ArxivCategoryClient.swift */,
+				38D4BAFE2E034ADE009A0766 /* XAIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -118,6 +121,14 @@
 		38D4BAA92E01F2B4009A0766 /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
+			sourceTree = "<group>";
+		};
+		38D4BAFA2E0349BD009A0766 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				38D4BAF92E0349BD009A0766 /* PDFTextExtractor.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +214,11 @@
 				38D4BAAD2E01F2B4009A0766 /* UserPreferences.swift in Sources */,
 				38D4BAAE2E01F2B4009A0766 /* ArxivAPIClient.swift in Sources */,
 				38D4BAAF2E01F2B4009A0766 /* ArxivPaper.swift in Sources */,
+				38D4BAFF2E034ADE009A0766 /* XAIClient.swift in Sources */,
 				38D4BAB02E01F2B4009A0766 /* CategorySelectionView.swift in Sources */,
-				38D4BAF22E034050009A0766 /* OpenAISummaryClient.swift in Sources */,
 				38D4BAB12E01F2B4009A0766 /* ArxivCategoryClient.swift in Sources */,
 				38D4BAB22E01F2B4009A0766 /* Categories.swift in Sources */,
+				38D4BAFB2E0349BD009A0766 /* PDFTextExtractor.swift in Sources */,
 				38D4BAB32E01F2B4009A0766 /* PapersListView.swift in Sources */,
 				38D4BAB42E01F2B4009A0766 /* CategoryViewModel.swift in Sources */,
 				38D4BAB52E01F2B4009A0766 /* SubcategorySelectionView.swift in Sources */,
@@ -269,6 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "IOSTechPaperApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -326,6 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "IOSTechPaperApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;

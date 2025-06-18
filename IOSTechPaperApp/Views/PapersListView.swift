@@ -18,18 +18,48 @@ struct PapersListView: View {
                     }
                 }
             } else {
-                List(viewModel.papers) { paper in
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(paper.title)
-                            .font(.headline)
-                        Text(paper.authors.joined(separator: ", "))
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                        Text(paper.published, style: .date)
-                            .font(.caption)
-                            .foregroundColor(.secondary)
+                if viewModel.papers.isEmpty {
+                    Text("No papers found for the selected categories.")
+                        .foregroundColor(.secondary)
+                        .padding()
+                } else {
+                    List(viewModel.papers) { paper in
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(paper.title)
+                                .font(.headline)
+                            Text(paper.authors.joined(separator: ", "))
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                            Text(paper.published, style: .date)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+
+                            if let summary = viewModel.summary(for: paper) {
+                                Text(summary)
+                                    .font(.footnote)
+                                    .padding(.top, 4)
+                            } else {
+                                if viewModel.isSummarizing(paper) {
+                                    HStack {
+                                        ProgressView()
+                                            .scaleEffect(0.75)
+                                        Text("Summarizing abstract...")
+                                            .font(.caption)
+                                            .foregroundColor(.secondary)
+                                    }
+                                } else {
+                                    Button("Generate Summary") {
+                                        viewModel.generateSummary(for: paper)
+                                    }
+                                    .font(.footnote)
+                                    .padding(.top, 4)
+                                }
+                            }
+
+                            // Removed full paper summary to avoid duplicate summaries
+                        }
+                        .padding(.vertical, 4)
                     }
-                    .padding(.vertical, 4)
                 }
             }
         }

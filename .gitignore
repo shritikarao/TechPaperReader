@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+build/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+*.xcresult
+
+# Swift Package Manager / SwiftPM
+Packages/
+.swiftpm/
+
+# Carthage
+Carthage/Build/
+
+# CocoaPods
+Pods/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**
+
+# SPM Artifacts
+Artifacts/
+
+# Secrets
+.env
+
+# Archives / IPAs
+*.ipa 
