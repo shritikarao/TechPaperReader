@@ -22,6 +22,8 @@
 		38D4BAF62E034431009A0766 /* IOSTechPaperApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38D4BAF52E034431009A0766 /* IOSTechPaperApp-Info.plist */; };
 		38D4BAFB2E0349BD009A0766 /* PDFTextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BAF92E0349BD009A0766 /* PDFTextExtractor.swift */; };
 		38D4BAFF2E034ADE009A0766 /* XAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BAFE2E034ADE009A0766 /* XAIClient.swift */; };
+		38D4BB052E1072AD009A0766 /* SavedPapersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BB042E1072AD009A0766 /* SavedPapersStore.swift */; };
+		38D4BB072E107341009A0766 /* SavedPapersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4BB062E107341009A0766 /* SavedPapersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		38D4BAF52E034431009A0766 /* IOSTechPaperApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSTechPaperApp-Info.plist"; sourceTree = "<group>"; };
 		38D4BAF92E0349BD009A0766 /* PDFTextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTextExtractor.swift; sourceTree = "<group>"; };
 		38D4BAFE2E034ADE009A0766 /* XAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAIClient.swift; sourceTree = "<group>"; };
+		38D4BB042E1072AD009A0766 /* SavedPapersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPapersStore.swift; sourceTree = "<group>"; };
+		38D4BB062E107341009A0766 /* SavedPapersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPapersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				38D4BAA42E01F2B4009A0766 /* ViewModels */,
 				38D4BAA82E01F2B4009A0766 /* Views */,
 				38D4BA512E01CA66009A0766 /* Products */,
+				38D4BB042E1072AD009A0766 /* SavedPapersStore.swift */,
+				38D4BB062E107341009A0766 /* SavedPapersView.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,8 +224,10 @@
 				38D4BAB02E01F2B4009A0766 /* CategorySelectionView.swift in Sources */,
 				38D4BAB12E01F2B4009A0766 /* ArxivCategoryClient.swift in Sources */,
 				38D4BAB22E01F2B4009A0766 /* Categories.swift in Sources */,
+				38D4BB072E107341009A0766 /* SavedPapersView.swift in Sources */,
 				38D4BAFB2E0349BD009A0766 /* PDFTextExtractor.swift in Sources */,
 				38D4BAB32E01F2B4009A0766 /* PapersListView.swift in Sources */,
+				38D4BB052E1072AD009A0766 /* SavedPapersStore.swift in Sources */,
 				38D4BAB42E01F2B4009A0766 /* CategoryViewModel.swift in Sources */,
 				38D4BAB52E01F2B4009A0766 /* SubcategorySelectionView.swift in Sources */,
 				38D4BAB62E01F2B4009A0766 /* PapersViewModel.swift in Sources */,

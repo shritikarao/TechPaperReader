@@ -3,6 +3,7 @@ import SwiftUI
 struct PapersListView: View {
     let selectedCategories: [String]
     @StateObject private var viewModel = PapersViewModel()
+    @EnvironmentObject private var savedStore: SavedPapersStore
 
     var body: some View {
         Group {
@@ -25,8 +26,15 @@ struct PapersListView: View {
                 } else {
                     List(viewModel.papers) { paper in
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(paper.title)
-                                .font(.headline)
+                            HStack {
+                                Text(paper.title)
+                                    .font(.headline)
+                                Spacer()
+                                Button(action: { savedStore.toggle(paper) }) {
+                                    Image(systemName: savedStore.isSaved(paper) ? "bookmark.fill" : "bookmark")
+                                }
+                                .buttonStyle(.plain)
+                            }
                             Text(paper.authors.joined(separator: ", "))
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
